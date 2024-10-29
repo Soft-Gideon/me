@@ -1,0 +1,90 @@
+html {
+  scroll-behavior: smooth;
+}  
+body {
+  margin : 0;
+  font-family: Arial, sans-serif;
+}
+main {
+}
+section {
+  padding: 50px 100px 0;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  transition: all 0.3s;
+  background: white;
+  z-index: 999;
+}
+header ul {
+  display: flex;
+  gap: 20px;
+}
+header ul li {
+  list-style: none;
+}
+a {
+  color: rgb(45, 45, 45);
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+}
+li .active::after,
+li a::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+  bottom: -2px;
+  height: 2px;
+  background-color: rgb(45, 45, 45);
+  pointer-events: none;
+}
+li a::after {
+  right: 100%;
+  left: 0;
+}
+li .active::after {
+  right: 0;
+  left: 0;
+}
+li a:hover::after {
+  right: 0;
+}
+li .active:hover::after {
+  right: 100%;
+}
+p {
+  color: rgb(45, 45, 45);
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  color: rgb(45, 45, 45);
+  font-weight: 500;
+  font-size: 30px;
+  font-family: Verdana;
+  margin: 0;
+}
+#home {
+  height: 100vh;
+  background-color: red;
+}
+#about {
+  height: 100vh;
+  background-color: blue;
+}
+#project {
+  height: 100vh;
+  background-color: green;
+}
+footer {
+  background-color: rgb(16, 16, 16);
+  height: 50vh;
+}
