@@ -13,7 +13,7 @@ export function renderProject() {
   projectCon.innerHTML = projectHTML;
 }
 
-renderProject();
+// renderProject();
 const projectInfoCon = document.querySelector('#project .info-con');
 const projectIcon = document.querySelector('#project i');
 

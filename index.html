@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Rajdhani:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/project.css" />
@@ -18,24 +21,69 @@
           <a href="#home">Home</a>
         </li>
         <li>
+          <a href="#service">Service</a>
+        </li>
+        <li>
           <a href="#about">About</a>
         </li>
         <li>
           <a href="#project">Project</a>
         </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </header>
     <main>
       <section id="home">
-        <h1>Home</h1>
+        <div class="con">
+          <div class="bx i">
+            <div class="img-con">
+              <img src="images/inner-circle.svg" alt="background image">
+              <img src="images/outer-circle.svg" alt="background image">
+            </div>
+            <h2>Hello I'm Gideon !</h2>
+            <h1>A Software Developer</h1>
+            <p>
+              Solution-oriented mindset, problem-solving enthusiasm, positive attitude towards challenges, overcoming obstacles with enthusiasm .
+            </p>
+            <div class="link-con">
+              <a href="#" class="i">Hire Me</a>
+              <a href="#" class="ii">download Cv</a>
+            </div>
+          </div>
+          <div class="bx ii"><img src="images/meditating.png" alt="my image"></div>
+        </div>
       </section>
+      
+      <section id="service">
+        <h1>Service</h1>
+      </section>
+
       <section id="about">
         <h1>About</h1>
       </section>
 
       <section id="project">
         <h1>Projects</h1>
-        <div class="con"></div>
+        <div class="con">
+          <div data-project-id="${project.id}" class="card">
+            <img src="images/skateboardgirl.webp" alt="project-img">
+            <p>${project.description}.</p>
+          </div>
+          <div data-project-id="${project.id}" class="card">
+            <img src="images/playing-keyboard.png" alt="project-img">
+            <p>${project.description}.</p>
+          </div>
+          <div data-project-id="${project.id}" class="card">
+            <img src="images/skateboardgirl.webp" alt="project-img">
+            <p>${project.description}.</p>
+          </div>
+          <div data-project-id="${project.id}" class="card">
+            <img src="images/meditating.png" alt="project-img">
+            <p>${project.description}.</p>
+          </div>
+        </div>
         <div class="info-con">
           <div class="box">
             <i class="lni lni-xmark"></i>
@@ -43,9 +91,10 @@
           </div>
         </div>
       </section>
+      <section id="contact"></section>
     </main>
     <footer>
-      <h1>Footer</h1>
+      <p style="font-size: 45px;">Footer</p>
     </footer>
     <script src="scripts/script.js"></script>
     <script type="module" src="scripts/project.js"></script>

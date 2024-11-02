@@ -1,11 +1,22 @@
 #project .con {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-top: 30px;
 }
+#project .con img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#project .con img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
 #project .con .card {
   border: 2px solid red;
-  height: 150px;
+  height: 400px;
   text-align: center;
   flex: 1;
 }

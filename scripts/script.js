@@ -27,7 +27,7 @@ const scrollHeader = {
   currentScrollY: 0,
   cursorOn: false,
   hideHeader: () => {
-    if (window.scrollY > scrollHeader.currentScrollY && window.scrollY > 100 && !scrollHeader.cursorOn) {
+    if (window.scrollY > scrollHeader.currentScrollY && window.scrollY > 30 && !scrollHeader.cursorOn) {
       header.style.top = '-100px';
     } else {
       header.style.top = '0';
