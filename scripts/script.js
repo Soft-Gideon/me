@@ -1,3 +1,4 @@
+'use strict';
 const sec = document.querySelectorAll('section');
 const header = document.querySelector('header');
 const headerLink = document.querySelectorAll('header ul li a');
@@ -23,7 +24,7 @@ const activeLink = {
 activeLink.addLinkStyle();
 
 // Hide and show header when scrolling
-const scrollHeader = {
+export const scrollHeader = {
   currentScrollY: 0,
   cursorOn: false,
   hideHeader: () => {
@@ -44,4 +45,15 @@ header.addEventListener('mouseleave', () => {
 window.addEventListener('scroll', () => {
   activeLink.addLinkStyle();
   scrollHeader.hideHeader();
+});
+
+
+// ============== typed js ================
+const homeType = document.querySelector('#home .typing');
+const typed = new Typed(homeType, {
+  strings: ['Software Developer', 'UI/UX Designer', 'Website Designer'],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true
 });

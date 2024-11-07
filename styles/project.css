@@ -1,8 +1,61 @@
+#project {
+  background-color: var(--main-color);
+  padding: 0;
+}
+#project .headings {
+  position: relative;
+  padding: 30px;
+  margin-bottom: 50px;
+  height: 300px;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-color);
+}
+#project .headings svg{
+  height: 150px;
+}
+#project .headings .txt-bx {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 30px;
+}
+#project .headings img {
+  position: absolute;
+}
+#project .headings .img1 {
+  height: 70px;
+  bottom: 0;
+  right: 0
+}
+#project .headings .img2 {
+  height: 55px;
+  bottom: 40%;
+  right: 180px
+}
+#project .headings .img3 {
+  height: 35px;
+  bottom: 80%;
+  right: 380px
+}
+#project .headings span {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+#project .headings h2 {
+  font-size: 35px;
+  line-height: 1.5;
+}
 #project .con {
+  padding-bottom: 70px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-top: 30px;
 }
 #project .con img {
   width: 100%;
@@ -15,27 +68,57 @@
   object-fit: cover;
 }
 #project .con .card {
-  border: 2px solid red;
+  cursor: pointer;
   height: 400px;
-  text-align: center;
+  margin: 30px 15px;
   flex: 1;
+}
+#project .con .card h2 {
+  color: var(--secondary-color);
+  margin: 15px 0 15px;
+  font-weight: 600;
+  font-size: 20.8px;
 }
 #project .info-con {
   background: rgba(0, 0, 0, 0.5);
+  display: flex;
   position: fixed;
   align-items: center;
   justify-content: center;
-  padding: 120px;
+  padding: 100px;
+  transition: all 0.3s;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  display: none;
+  opacity: 0;
+  z-index: 1001;
+  pointer-events: none;
 }
 #project .info-con.show-info {
-  display: flex;
+  pointer-events: all;
+  opacity: 1;
+}
+#project .info-con .lni-arrow-right {
+  color: white;
+  font-size: 70px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 10%;
+  z-index: 1;
+}
+#project .info-con .lni-arrow-left {
+  color: white;
+  font-size: 70px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 10%;
+  z-index: 1;
 }
 #project .info-con .box {
+  transition: all 0.3s;
   position: relative;
   padding: 30px;
   color: rgb(200, 200, 200);
@@ -43,18 +126,44 @@
   width: 100%;
   height: 100%;
   max-width: 700px;
+  transform: scale(0.3);
   max-height: 500px;
+}
+#project .info-con.show-info .box {
+  transform: scale(1);
 }
 #project .info-con .box i {
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: -45px;
+  right: 0;
+  font-weight: lighter;
   cursor: pointer;
   padding: 2px;
-  font-size: 22px;
+  font-size: 50px;
   color: whitesmoke;
-  border: 1.2px solid white;
+}
+#project .info-con .box .text{
+  /* border: 1px solid red; */
+  position: absolute;
+  bottom: 30px;
+  top: 30px;
+  right: 30px;
+  left: 30px;
+  display: flex;
+  gap: 50px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+#project .info-con .box .text::-webkit-scrollbar {
+  display: none;
+}
+#project .info-con .box .text img{
+  flex: none;
+  object-fit: cover;
+  width: 100%;
 }

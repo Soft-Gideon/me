@@ -1,3 +1,4 @@
+'use strict';
 export function getProject(projectId) {
   let matchingProject;
 
