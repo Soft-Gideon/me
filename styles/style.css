@@ -23,7 +23,6 @@ body {
   margin: 0;
   font-family: Urbanist, sans-serif;
   box-sizing: border-box;
-  overflow: hidden;
 }
 :root {
   --main-color: rgb(17, 16, 19);
