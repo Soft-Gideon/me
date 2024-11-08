@@ -167,3 +167,9 @@
   object-fit: cover;
   width: 100%;
 }
+
+@media (max-width: 650px) {
+  #project .con {
+    grid-template-columns: 1fr;
+  }
+}

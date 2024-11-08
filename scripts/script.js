@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 const sec = document.querySelectorAll('section');
 const header = document.querySelector('header');
 const headerLink = document.querySelectorAll('header ul li a');
