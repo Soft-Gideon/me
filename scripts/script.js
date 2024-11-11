@@ -57,3 +57,8 @@ const typed = new Typed(homeType, {
   backDelay: 1000,
   loop: true
 });
+
+setTimeout(() => {
+  alert(`PLEASE KINDLY NOTE:
+THIS WEBSITE IS ON DEVELOPMENT MODE. THE WEBSITE MAY NOT FULLY FUNCTION AS EXPECTED AND SOME CONTENT ARE JUST THERE FOR PLACE HOLDING.`);
+}, 5000)
